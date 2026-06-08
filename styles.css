@@ -169,7 +169,7 @@ h3 {
 
 .hero {
   position: relative;
-  min-height: 92vh;
+  min-height: 720px;
   display: grid;
   align-items: end;
   overflow: hidden;
@@ -201,9 +201,9 @@ h3 {
   z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 360px;
-  gap: 54px;
+  gap: 42px;
   align-items: end;
-  padding: 170px 0 66px;
+  padding: 136px 0 48px;
 }
 
 .hero-copy {
@@ -221,9 +221,9 @@ h3 {
 
 h1 {
   max-width: 840px;
-  margin-bottom: 22px;
-  font-size: clamp(3rem, 7.4vw, 6.6rem);
-  line-height: 0.93;
+  margin-bottom: 18px;
+  font-size: clamp(2.8rem, 5.8vw, 5.35rem);
+  line-height: 0.98;
   letter-spacing: 0;
 }
 
@@ -242,9 +242,9 @@ h3 {
 
 .hero-subhead {
   max-width: 690px;
-  margin-bottom: 32px;
+  margin-bottom: 26px;
   color: rgba(255, 255, 255, 0.82);
-  font-size: clamp(1.05rem, 2vw, 1.28rem);
+  font-size: clamp(1.02rem, 1.6vw, 1.18rem);
 }
 
 .hero-actions,
@@ -293,7 +293,7 @@ h3 {
 }
 
 .hero-panel div {
-  padding: 23px;
+  padding: 19px;
   background: rgba(7, 12, 17, 0.52);
 }
 
@@ -301,13 +301,13 @@ h3 {
   display: block;
   margin-bottom: 7px;
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   line-height: 1;
 }
 
 .hero-panel span {
   color: rgba(255, 255, 255, 0.74);
-  font-size: 0.93rem;
+  font-size: 0.88rem;
 }
 
 .section {
@@ -609,6 +609,10 @@ textarea:focus {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .hero-content {
+    padding-top: 118px;
+  }
+
   .service-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -673,7 +677,7 @@ textarea:focus {
   }
 
   .hero {
-    min-height: 820px;
+    min-height: 660px;
   }
 
   .hero-overlay {
@@ -683,12 +687,12 @@ textarea:focus {
   }
 
   .hero-content {
-    gap: 28px;
-    padding: 124px 0 42px;
+    gap: 22px;
+    padding: 106px 0 34px;
   }
 
   h1 {
-    font-size: clamp(2.75rem, 14vw, 4.3rem);
+    font-size: clamp(2.35rem, 10.8vw, 3.55rem);
   }
 
   h2 {
@@ -701,6 +705,14 @@ textarea:focus {
   .service-grid,
   .process-list {
     grid-template-columns: 1fr;
+  }
+
+  .hero-panel div {
+    padding: 14px 16px;
+  }
+
+  .hero-panel strong {
+    font-size: 1.55rem;
   }
 
   .section {
