@@ -16,6 +16,15 @@ const calcHoursFreed = document.querySelector("[data-calc-hours-freed]");
 const calcOpportunityMonthly = document.querySelector("[data-calc-opportunity-monthly]");
 const calcOpportunityYearly = document.querySelector("[data-calc-opportunity-yearly]");
 
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
+if (!window.location.hash) {
+  window.scrollTo(0, 0);
+  window.addEventListener("load", () => window.scrollTo(0, 0), { once: true });
+}
+
 const updateHeader = () => {
   header.classList.toggle("scrolled", window.scrollY > 20);
 };
