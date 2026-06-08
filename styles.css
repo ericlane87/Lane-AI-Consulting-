@@ -476,6 +476,10 @@ h3 {
   font-size: 1.05rem;
 }
 
+.section-cta {
+  margin-top: 26px;
+}
+
 .service-grid,
 .case-grid {
   display: grid;
