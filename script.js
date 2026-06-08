@@ -26,7 +26,7 @@ nav.addEventListener("click", (event) => {
 
 window.addEventListener("scroll", updateHeader, { passive: true });
 window.addEventListener("resize", () => {
-  if (window.innerWidth > 780) {
+  if (window.innerWidth > 980) {
     closeNav();
   }
 });
