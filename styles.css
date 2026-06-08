@@ -9,6 +9,12 @@
   --teal-dark: #0d514d;
   --amber: #c48a31;
   --blue: #305f83;
+  --green: #168456;
+  --green-soft: #e8f5ee;
+  --gold-soft: #fff4df;
+  --blue-soft: #eaf2f8;
+  --coral: #c85d4d;
+  --coral-soft: #fff0ed;
   --shadow: 0 22px 60px rgba(16, 24, 32, 0.16);
   --radius: 8px;
   --container: min(1160px, calc(100vw - 40px));
@@ -361,6 +367,7 @@ h3 {
   min-height: 280px;
   padding: 24px;
   border: 1px solid var(--line);
+  border-top: 4px solid var(--teal);
   border-radius: var(--radius);
   background: linear-gradient(180deg, #ffffff, #f7faf9);
   box-shadow: 0 14px 34px rgba(16, 24, 32, 0.06);
@@ -376,6 +383,44 @@ h3 {
   color: #fff;
   background: var(--teal-dark);
   font-weight: 800;
+}
+
+.outcome-revenue {
+  --outcome: var(--green);
+  --outcome-soft: var(--green-soft);
+}
+
+.outcome-savings {
+  --outcome: var(--amber);
+  --outcome-soft: var(--gold-soft);
+}
+
+.outcome-speed {
+  --outcome: var(--coral);
+  --outcome-soft: var(--coral-soft);
+}
+
+.outcome-visibility {
+  --outcome: var(--blue);
+  --outcome-soft: var(--blue-soft);
+}
+
+.money-grid article.outcome-revenue,
+.money-grid article.outcome-savings,
+.money-grid article.outcome-speed,
+.money-grid article.outcome-visibility,
+.use-case-card.outcome-revenue,
+.use-case-card.outcome-savings,
+.use-case-card.outcome-speed,
+.use-case-card.outcome-visibility {
+  border-top-color: var(--outcome);
+}
+
+.money-grid article.outcome-revenue span,
+.money-grid article.outcome-savings span,
+.money-grid article.outcome-speed span,
+.money-grid article.outcome-visibility span {
+  background: var(--outcome);
 }
 
 .money-grid p {
@@ -494,6 +539,7 @@ h3 {
   gap: 13px;
   padding: 26px;
   border: 1px solid var(--line);
+  border-top: 4px solid var(--teal);
   border-radius: var(--radius);
   background: #fff;
   box-shadow: 0 16px 38px rgba(16, 24, 32, 0.06);
@@ -520,12 +566,12 @@ h3 {
 
 .case-topline span {
   color: #fff;
-  background: var(--ink-2);
+  background: var(--outcome, var(--ink-2));
 }
 
 .case-topline strong {
-  color: var(--teal-dark);
-  background: #e8f3f1;
+  color: var(--ink-2);
+  background: var(--outcome-soft, #e8f3f1);
 }
 
 .use-case-card h3 {
@@ -556,7 +602,7 @@ h3 {
   border: 1px solid #d9e5e8;
   border-radius: 8px;
   color: var(--ink-2);
-  background: var(--soft);
+  background: var(--outcome-soft, var(--soft));
   font-size: 0.82rem;
   font-weight: 800;
 }
