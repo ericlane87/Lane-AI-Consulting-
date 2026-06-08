@@ -82,6 +82,56 @@
         </div>
       </section>
 
+      <section class="section calculator" id="calculator">
+        <div class="container calculator-grid">
+          <div>
+            <p class="eyebrow">Savings & Opportunity Calculator</p>
+            <h2>See what repetitive work may be costing and what freed time could be worth.</h2>
+            <p>
+              Savings shows what manual work may be costing today. Opportunity value estimates what the business could gain if some of that freed time goes toward sales, customers, estimates, follow-up, or higher-value work.
+            </p>
+          </div>
+          <div class="calc-card">
+            <div class="calc-field-grid">
+              <label>
+                People doing the work
+                <input type="number" min="1" step="1" value="1" data-calc-people>
+              </label>
+              <label>
+                Hours per person each week
+                <input type="number" min="0" step="1" value="10" data-calc-hours>
+              </label>
+              <label>
+                Estimated hourly labor cost
+                <input type="number" min="0" step="1" value="35" data-calc-rate>
+              </label>
+              <label>
+                Productive hour value
+                <input type="number" min="0" step="1" value="100" data-calc-value>
+              </label>
+            </div>
+            <label>
+              Percent of manual work that could be reduced
+              <input type="range" min="10" max="80" step="5" value="40" data-calc-percent>
+              <span class="range-readout"><b data-calc-percent-label>40%</b> reduction estimate</span>
+            </label>
+            <label>
+              Percent of freed time used for higher-value work
+              <input type="range" min="10" max="100" step="5" value="50" data-calc-opportunity>
+              <span class="range-readout"><b data-calc-opportunity-label>50%</b> reinvested into sales, customers, or higher-value work</span>
+            </label>
+            <div class="calc-results" aria-live="polite">
+              <div><strong data-calc-weekly>$140</strong><span>estimated weekly labor savings</span></div>
+              <div><strong data-calc-monthly>$607</strong><span>estimated monthly labor savings</span></div>
+              <div><strong data-calc-yearly>$7,280</strong><span>estimated yearly labor savings</span></div>
+              <div><strong data-calc-hours-freed>17</strong><span>estimated freed hours per month</span></div>
+              <div><strong data-calc-opportunity-monthly>$867</strong><span>estimated monthly opportunity value</span></div>
+              <div><strong data-calc-opportunity-yearly>$10,400</strong><span>estimated yearly opportunity value</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section money" id="money">
         <div class="container">
           <div class="section-heading">
@@ -113,38 +163,6 @@
           </div>
           <div class="section-cta">
             <a class="button primary" href="#calculator">Estimate Manual Work Savings</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section calculator" id="calculator">
-        <div class="container calculator-grid">
-          <div>
-            <p class="eyebrow">Savings Calculator</p>
-            <h2>Estimate what manual work may be costing.</h2>
-            <p>
-              This is a simple starting estimate. If a task repeats every week, even small time savings can become meaningful over a month or a year.
-            </p>
-          </div>
-          <div class="calc-card">
-            <label>
-              Hours spent manually each week
-              <input type="number" min="0" step="1" value="10" data-calc-hours>
-            </label>
-            <label>
-              Estimated hourly labor cost
-              <input type="number" min="0" step="1" value="35" data-calc-rate>
-            </label>
-            <label>
-              Percent of work that could be reduced
-              <input type="range" min="10" max="80" step="5" value="40" data-calc-percent>
-              <span class="range-readout"><b data-calc-percent-label>40%</b> reduction estimate</span>
-            </label>
-            <div class="calc-results" aria-live="polite">
-              <div><strong data-calc-weekly>$140</strong><span>estimated weekly savings</span></div>
-              <div><strong data-calc-monthly>$607</strong><span>estimated monthly savings</span></div>
-              <div><strong data-calc-yearly>$7,280</strong><span>estimated yearly savings</span></div>
-            </div>
           </div>
         </div>
       </section>
