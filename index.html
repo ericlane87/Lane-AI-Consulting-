@@ -117,6 +117,38 @@
         </div>
       </section>
 
+      <section class="section calculator" id="calculator">
+        <div class="container calculator-grid">
+          <div>
+            <p class="eyebrow">Savings Calculator</p>
+            <h2>Estimate what manual work may be costing.</h2>
+            <p>
+              This is a simple starting estimate. If a task repeats every week, even small time savings can become meaningful over a month or a year.
+            </p>
+          </div>
+          <div class="calc-card">
+            <label>
+              Hours spent manually each week
+              <input type="number" min="0" step="1" value="10" data-calc-hours>
+            </label>
+            <label>
+              Estimated hourly labor cost
+              <input type="number" min="0" step="1" value="35" data-calc-rate>
+            </label>
+            <label>
+              Percent of work that could be reduced
+              <input type="range" min="10" max="80" step="5" value="40" data-calc-percent>
+              <span class="range-readout"><b data-calc-percent-label>40%</b> reduction estimate</span>
+            </label>
+            <div class="calc-results" aria-live="polite">
+              <div><strong data-calc-weekly>$140</strong><span>estimated weekly savings</span></div>
+              <div><strong data-calc-monthly>$607</strong><span>estimated monthly savings</span></div>
+              <div><strong data-calc-yearly>$7,280</strong><span>estimated yearly savings</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section about" id="about">
         <div class="container two-column">
           <div>
@@ -485,38 +517,6 @@
         </div>
       </section>
 
-      <section class="section calculator" id="calculator">
-        <div class="container calculator-grid">
-          <div>
-            <p class="eyebrow">Savings Calculator</p>
-            <h2>Estimate what manual work may be costing.</h2>
-            <p>
-              This is a simple starting estimate. If a task repeats every week, even small time savings can become meaningful over a month or a year.
-            </p>
-          </div>
-          <div class="calc-card">
-            <label>
-              Hours spent manually each week
-              <input type="number" min="0" step="1" value="10" data-calc-hours>
-            </label>
-            <label>
-              Estimated hourly labor cost
-              <input type="number" min="0" step="1" value="35" data-calc-rate>
-            </label>
-            <label>
-              Percent of work that could be reduced
-              <input type="range" min="10" max="80" step="5" value="40" data-calc-percent>
-              <span class="range-readout"><b data-calc-percent-label>40%</b> reduction estimate</span>
-            </label>
-            <div class="calc-results" aria-live="polite">
-              <div><strong data-calc-weekly>$140</strong><span>estimated weekly savings</span></div>
-              <div><strong data-calc-monthly>$607</strong><span>estimated monthly savings</span></div>
-              <div><strong data-calc-yearly>$7,280</strong><span>estimated yearly savings</span></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="section guardrails">
         <div class="container guardrails-grid">
           <div>
@@ -640,7 +640,7 @@
     <footer class="footer">
       <div class="container footer-grid">
         <p>Lane Automation & Consulting</p>
-        <p>Charlotte, NC | ericlane87@gmail.com</p>
+        <p>ericlane87@gmail.com</p>
       </div>
     </footer>
 
